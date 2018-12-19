@@ -1,0 +1,523 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+strong {
+	font-weight: bold;
+}
+
+
+/*
+1. Global
+2. Header
+3. Main
+4. History
+*/
+
+/*
+1. Global
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+.border {
+	border: 1px solid blue;
+}
+
+body {
+	background-color: #f1f1f1;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.container {
+	max-width: 1500px;
+	margin: 30px 30px;
+}
+
+@media only screen and (min-width: 1600px) {
+	.container {
+		margin: 30px auto;
+	}
+}
+
+h1 {
+	font-size: 25px;
+}
+
+.top a {
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 20px 40px;
+	border-radius: 5px;
+	opacity: 0.5;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	margin: 5px;
+	border: 1px solid #a9a9a9;
+}
+
+/*
+2. HEADER
+*/
+
+.nav {
+	background-color: white;
+}
+
+.nav-right {
+	background-color: #f1f1f1;
+}
+
+.nav a {
+	display: block;
+	padding: 15px 20px;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	}
+
+@media only screen and (min-width: 600px) {
+	.nav {
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.nav a {
+	flex: 1;
+	display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 561px) {
+	.navigation {
+	position: initial;
+	}
+}
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+a:active {
+	color: white;
+}
+
+#logo {
+	background-color: #f44336;
+}
+
+#logo:link {
+	color: white;
+}
+
+#logo:visited {
+	color: white;
+}
+
+#logo:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#logo:active {
+	color: black;
+}
+
+.nav-left i {
+	margin-right: 10px;
+}
+
+/*
+3. MAIN
+*/
+
+.main {
+	display: flex;
+	justify-content: center;
+	background-color: #f1f1f1;
+}
+
+.main-picture {
+	position: relative;
+	overflow: hidden;
+}
+
+.main-booking {
+		position: absolute;
+		left: 50%;
+		bottom: 50%;
+		transform: translate(-50%,50%);
+		width: 70%;
+		background-color: #fff;
+		max-width: 600px;
+		max-height: 485px;		
+}
+
+@media only screen and (min-width: 600px) {
+	.main-booking {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		left: 2%;
+		bottom: 50%;
+		transform: translateY(50%);
+		width: 70%;
+		background-color: #fff;
+		max-width: 600px;
+	}
+}
+	
+.main-booking-header {
+	background-color: #f44336;
+	color: white;
+}
+
+.main-booking-header i {
+	margin-right: 10px;
+}
+
+.main-booking-form i {
+	margin-right: 5px;
+	padding: 5px;
+}
+
+.main-booking-header h1 {
+	padding: 15px;
+}
+
+.main-picture img {
+	max-height: 500px;
+}
+
+@media only screen and (min-width: 900px) {
+	.main img {
+	max-width: 100%;
+	max-height: initial;
+	}
+}
+
+.form div {
+	flex: 1;
+	margin: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+	.form {
+		display: flex;
+	}
+}
+
+input {
+	padding: 8px;
+	width: 100%;
+	margin-top: 5px; 
+	font-size: 15px;
+	border: 1px solid #ccc;
+}
+
+form button {
+	padding: 8px 16px;
+	margin: 10px 12px;
+	cursor: pointer;
+	background-color: #616161;
+	color: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    border: none;
+}
+
+button:hover {
+	color: black;
+	background-color: #ccc;
+}
+
+/*
+4. ROOMS
+*/
+
+.rooms-offer div {
+	flex: 1;
+	line-height: 2.3em;
+	background-color: white;
+	padding: 2%;
+	margin-bottom: 4%;
+}
+
+@media only screen and (min-width: 600px) {
+	.rooms-offer {
+		display: flex;
+	}
+
+	.rooms-offer div {
+		flex: 1;
+		line-height: 2.3em;
+		background-color: white;
+		padding: 1%;
+		margin-bottom: initial;
+	}
+}
+
+.rooms img {
+	max-width: 100%;
+}
+
+.rooms button {
+	padding: 10px 16px;
+	width: 100%;
+	margin-top: 10px;
+	cursor: pointer;
+	background-color: black;
+	color: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    border: none;
+}
+
+.rooms button:hover {
+	color: black;
+	background-color: #ccc;
+}
+
+/*
+5. Information
+*/
+
+.about {
+	flex: 1;
+	line-height: 1.5em;
+	padding-right: 2%;
+}
+
+.adres {
+	margin: 15px 0;
+}
+
+@media only screen and (min-width: 600px) {
+	.information {
+		display: flex;
+	}
+	.map {
+		flex: 1;
+		padding-left: 2%;
+	}
+	.container .adres {
+		display: flex;
+	}
+	.container .adres div{
+		flex: 1;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+		.container .adres {
+		display: flex;
+		padding: 0 300px;
+	}
+}
+
+	.container .adres div{
+		text-align: center;
+		padding: 30px 0;
+}
+
+.adres i {
+	margin-right: 10px;
+	color: #f44336;
+}
+
+.info {
+	background-color: #f44336;
+	color: #ffffff;
+	padding: 2% 0;
+	text-align: center;
+}
+
+.info i {
+	background-color: #ff5722;
+	padding: 13px;	
+	margin-right: 10px;
+}
+
+.hotels {
+	display: flex;
+}
+
+.hotels img {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.hotels-left {
+	flex: 1;
+	padding-right: 1%;
+}
+
+.hotels-right {
+	flex: 1;
+	width: 50%;
+	display: flex;
+	padding-left: 1%;
+	flex-direction: row;
+}
+
+.hotels-left img {
+	padding: 1%;
+}
+
+.hotels-right img {
+	padding: 2%;
+}
+
+/*
+6. NEWSLETTER>
+*/
+
+.container:nth-of-type(5) {
+	max-width: 100%;
+	margin: 30px auto;
+}
+
+.newsletter {
+	background-color: #000;
+	color: #fff;
+	opacity: 0.7;
+	padding: 3% 2%
+}
+
+input {
+	margin-bottom: 2%;
+	line-height: inherit;
+}
+
+
+.newsletter button {
+	color: #fff;
+	background-color: #f44336;
+	text-decoration: none;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	padding: 8px 16px;
+	font: inherit;
+
+}
+
+.newsletter:hover {
+	opacity: 1;
+}
+
+.newsletter button:hover {
+	background-color: #ccc;
+	color: #000;
+}
+
+.contact i {
+	line-height: 1.5;
+	margin-right: 10px;
+	color: #f44336;
+}
+
+.contact input {
+	padding: 12px;	
+}
+
+input::placeholder {
+	color: #a6a6a6;
+}
+
+.contact button {
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	background-color: #000;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	padding: 12px 18px;
+	font: inherit;
+	margin-bottom: 4%;
+}
+
+.contact button:hover {
+	background-color: #ccc;
+	color: #000;
+}
+
+.find-us {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 3;
+	padding: 3% 0;
+}
+
+.find-us i {
+	transition: font-size 1s, padding 1s;
+}
+
+.find-us i:hover {
+	opacity: 0.7;
+	cursor: pointer;
+	font-size: 40px;
+	padding: 0 8px;
+}
+
